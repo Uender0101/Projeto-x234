@@ -1,0 +1,129 @@
+/* Reset & Variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    padding-bottom: 2rem;
+}
+
+/* Header */
+.header {
+    background-color: #111827;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #10b981;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.logo span {
+    color: #10b981;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.online {
+    background-color: #065f46;
+    color: #34d399;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Grid de Métricas */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 5px solid #3b82f6;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.card .metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.card .metric-desc {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Card em estado de Alerta */
+.card.alert {
+    border-left-color: #ef4444;
+}
+
+.card.alert .metric-value {
+    color: #f87171;
+}
+
+/* Seção de Logs */
+.logs-section {
+    background-color: #111827;
+    padding: 2rem;
+    border-radius: 6px;
+    border: 1px solid #374151;
+}
+
+.logs-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #f3f4f6;
+}
+
+.log-list {
+    list-style: none;
+}
+
+.log-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid #1f2937;
+    font-size: 0.95rem;
+}
+
+.log-item.success { color: #34d399; }
+.log-item.warning { color: #fbbf24; }
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: #4b5563;
+    font-size: 0.85rem;
+}
