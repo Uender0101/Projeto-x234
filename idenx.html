@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Monitoramento - InfraOps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">InfraOps_<span>Dash</span></div>
+        <div class="status-geral">Status do Sistema: <span class="badge online">ONLINE</span></div>
+    </header>
+
+    <main class="container">
+        <!-- Cards de Métricas -->
+        <section class="metrics-grid">
+            <div class="card">
+                <h3>Uso de CPU</h3>
+                <div class="metric-value">24%</div>
+                <p class="metric-desc">Média dos clusters ativos</p>
+            </div>
+            
+            <div class="card">
+                <h3>Memória RAM</h3>
+                <div class="metric-value">58%</div>
+                <p class="metric-desc">42 GB disponíveis</p>
+            </div>
+
+            <div class="card alert">
+                <h3>Uso de Armazenamento</h3>
+                <div class="metric-value">82%</div>
+                <p class="metric-desc">Partição /dev/sda1 crítica</p>
+            </div>
+        </section>
+
+        <!-- Seção de Alertas/Logs Rápidos -->
+        <section class="logs-section">
+            <h2>Últimos Eventos do Sistema</h2>
+            <ul class="log-list">
+                <li class="log-item success">✓ Backup diário executado com sucesso às 03:00.</li>
+                <li class="log-item warning">⚠ Alta latência detectada no gateway de monitoramento.</li>
+                <li class="log-item success">✓ Container 'app-frontend' reiniciado automaticamente (saudável).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 InfraOps Dashboard - Projeto Base para Práticas de Fork.</p>
+    </footer>
+
+</body>
+</html>
